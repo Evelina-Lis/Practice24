@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Цирюльникъ - Вакансии</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <div class="back-button">
+            <img src="images\Back.png" alt="Назад">
+        </div>
+        <div class="user-icon" id="userIcon">
+            <img src="images\User.png" alt="Пользователь">
+        </div>
+        </div>
+    </div>
+        <div class="chelovek">
+        <div class="chelovek-background">
+            <img src="images/IMG_2275.PNG" alt="Человек" class="person-image">
+        <div class="chelovek-content">
+            <h1>Lorem ipsum</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button class="gradient-button">ПРИСТУПИТЬ К ОБУЧЕНИЮ</button>
+        </div>
+        </div>
+        </div>
+        
+        <div class="jobs">
+            <h2>ВАКАНСИИ</h2>
+                <p>Актуальные вакансии в салонах Цирюльникъ</p>
+<!-- выбор города -->
+            <div class="city-selector">
+                <button id="cityButton" onclick="toggleDropdown()">Калининград <span>&#9660;</span></button>
+                <div id="cityDropdown" class="dropdown-content">
+                    <a href="#" onclick="selectCity('Калининград', event)">Калининград</a>
+                    <a href="#" onclick="selectCity('Москва', event)">Москва</a>
+                    <a href="#" onclick="selectCity('Санкт-Петербург', event)">Санкт-Петербург</a>
+                    <a href="#" onclick="selectCity('Екатеринбург', event)">Екатеринбург</a>
+                    <a href="#" onclick="selectCity('Новосибирск', event)">Новосибирск</a>
+                    <a href="#" onclick="selectCity('Владивосток', event)">Владивосток</a>
+                </div>
+            </div>
+<!-- каталог вакансий -->
+            <div class="job-grid">
+                <div class="job">
+                    <h3>Программист</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Сварщик</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Администратор</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Менеджер</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Налогоплатильщик</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Кондуктор</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Парикхмахер</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Химик</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Джазист в баре</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Научный руководитель</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Кинолог</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+                <div class="job">
+                    <h3>Зоолог</h3>
+                        <p>Курыжова, 7б</p>
+                            <button onclick="window.location.href='progress.html'">Пройти обучение</button>
+                </div>
+        </div>
+        </div>
+<!-- footer -->
+        <div class="footer">
+        <p>© Цирюльникъ. Все права защищены</p>
+        <img src="images/telegram.png" alt="Telegram">
+        <img src="images/free-icon-vkontakte-2190437.png" alt="vk">
+        <img src="images/instagram.png" alt="inst">
+        </div>
+    </div>
+<!-- Вход -->
+    <div id="loginModal" class="modal">
+    <div class="modal-content">
+    <span class="close" id="loginClose">&times;</span>
+    <h2>Войти с помощью Telegram</h2>
+    <button id="loginButton" class="submit-button">Войти</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
